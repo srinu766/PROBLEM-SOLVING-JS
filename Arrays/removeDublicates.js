@@ -1,24 +1,25 @@
 const arr = [35, 54, 35, 78];
 
+
 function RemoveDublicates(arr){
-    let unique = [];
+    let uniqueArr = [];
 
     for(let i=0; i<arr.length; i++){
         let isDublicate = false;
 
         for(let j=0; j<i; j++){
             if(arr[i] === arr[j]){
-                isDublicate =true;
+                isDublicate = true;
                 break;
             }
         }
         if(!isDublicate){
-            unique.push(arr[i]);
+            uniqueArr.push(arr[i]);
         }
     }
-    return unique
-
+    return uniqueArr;
 }
+
 
 console.log(RemoveDublicates(arr))
 

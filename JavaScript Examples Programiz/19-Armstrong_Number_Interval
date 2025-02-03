@@ -1,0 +1,29 @@
+
+
+
+// abcd... = an + bn + cn + dn + ...
+
+// 153 = 1*1*1 + 5*5*5 + 3*3*3
+
+// 1634 = 1*1*1*1 + 6*6*6*6* + 3*3*3*3 + 4*4*4*4
+
+let lowNumber = 10;
+let highNumber = 500;
+
+for(let i=lowNumber; i<=highNumber; i++){
+    let numberOfDigits = i.toString().length
+
+    let sum = 0;
+    let temp = i;
+
+    while(temp > 0){
+        remainder = temp % 10;
+        sum += remainder ** numberOfDigits;
+        temp = parseInt(temp / 10);
+    }
+
+    if(sum == i){
+        console.log(i)
+    }
+
+}
