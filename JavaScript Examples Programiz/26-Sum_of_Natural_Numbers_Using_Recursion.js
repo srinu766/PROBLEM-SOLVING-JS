@@ -1,4 +1,6 @@
-<script>
+// Recursion
+
+// Recursion in JavaScript is a programming technique where a function calls itself to solve a problem.
 
 function sum(num) {
   if (num > 0) {
@@ -13,4 +15,3 @@ let num = 5;
 let result = sum(num);
 
 console.log(result);
-</script>
