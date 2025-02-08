@@ -1,6 +1,6 @@
 
 
-// let num =170 ;
+// let num = 170;
 let num =5
 
 function fact(n){
